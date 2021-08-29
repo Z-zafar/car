@@ -1,0 +1,40 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+}
+
+div {
+	display: inline-block;
+	background-color: yellow;
+	padding: 200px;
+	margin: 100px 150px;
+	border-radius: 20px;
+	box-shadow: 0 30px 10px #ccc;
+}
+
+img {
+	width: 400px;
+	transition: .5s opacity ease, .5s transform ease;
+}
+
+#one {
+	opacity: 0;
+	transform: scale(0.5);
+}
+
+div:hover #one {
+	opacity: 1;
+	transform: scale(1);
+}
+
+div:hover #two {
+	opacity: 0;
+	transform: scale(0.5);
+}
